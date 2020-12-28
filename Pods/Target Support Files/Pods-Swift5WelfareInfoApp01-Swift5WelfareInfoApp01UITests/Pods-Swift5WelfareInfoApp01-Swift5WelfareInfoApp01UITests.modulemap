@@ -1,0 +1,6 @@
+framework module Pods_Swift5WelfareInfoApp01_Swift5WelfareInfoApp01UITests {
+  umbrella header "Pods-Swift5WelfareInfoApp01-Swift5WelfareInfoApp01UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
