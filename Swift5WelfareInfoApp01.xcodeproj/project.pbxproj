@@ -19,7 +19,7 @@
 		8DF542C02599A22B0052C902 /* InfoDeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF542BF2599A22B0052C902 /* InfoDeckViewController.swift */; };
 		8DF542CA2599A8D40052C902 /* NewsItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF542C92599A8D40052C902 /* NewsItems.swift */; };
 		8DF542CF2599AD4E0052C902 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF542CE2599AD4E0052C902 /* WebViewController.swift */; };
-		8DF542DA2599B0910052C902 /* Page1TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF542D92599B0910052C902 /* Page1TableViewController.swift */; };
+		8DF542DA2599B0910052C902 /* Page1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF542D92599B0910052C902 /* Page1ViewController.swift */; };
 		CECE91D1A9A0E88EB9982A69 /* Pods_Swift5WelfareInfoApp01Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0A80D7E5A32A266634A8CD /* Pods_Swift5WelfareInfoApp01Tests.framework */; };
 		D666C4BE65AE0B289B8E5B67 /* Pods_Swift5WelfareInfoApp01_Swift5WelfareInfoApp01UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD79015759A21AF9982B039 /* Pods_Swift5WelfareInfoApp01_Swift5WelfareInfoApp01UITests.framework */; };
 /* End PBXBuildFile section */
@@ -63,7 +63,7 @@
 		8DF542BF2599A22B0052C902 /* InfoDeckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDeckViewController.swift; sourceTree = "<group>"; };
 		8DF542C92599A8D40052C902 /* NewsItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItems.swift; sourceTree = "<group>"; };
 		8DF542CE2599AD4E0052C902 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		8DF542D92599B0910052C902 /* Page1TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1TableViewController.swift; sourceTree = "<group>"; };
+		8DF542D92599B0910052C902 /* Page1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1ViewController.swift; sourceTree = "<group>"; };
 		B02E67262145ABC8F4B5BBA0 /* Pods_Swift5WelfareInfoApp01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift5WelfareInfoApp01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23113D0D66A10E4BCFA11E3 /* Pods-Swift5WelfareInfoApp01-Swift5WelfareInfoApp01UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift5WelfareInfoApp01-Swift5WelfareInfoApp01UITests.release.xcconfig"; path = "Target Support Files/Pods-Swift5WelfareInfoApp01-Swift5WelfareInfoApp01UITests/Pods-Swift5WelfareInfoApp01-Swift5WelfareInfoApp01UITests.release.xcconfig"; sourceTree = "<group>"; };
 		D9DE6DCCD56DC3FFC0A72E9F /* Pods-Swift5WelfareInfoApp01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift5WelfareInfoApp01.release.xcconfig"; path = "Target Support Files/Pods-Swift5WelfareInfoApp01/Pods-Swift5WelfareInfoApp01.release.xcconfig"; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 				8DF542BA25999AAA0052C902 /* PickerViewController.swift */,
 				8DF542BF2599A22B0052C902 /* InfoDeckViewController.swift */,
 				8DF542CE2599AD4E0052C902 /* WebViewController.swift */,
-				8DF542D92599B0910052C902 /* Page1TableViewController.swift */,
+				8DF542D92599B0910052C902 /* Page1ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -442,7 +442,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DF542DA2599B0910052C902 /* Page1TableViewController.swift in Sources */,
+				8DF542DA2599B0910052C902 /* Page1ViewController.swift in Sources */,
 				8DF542BB25999AAA0052C902 /* PickerViewController.swift in Sources */,
 				8DF542C02599A22B0052C902 /* InfoDeckViewController.swift in Sources */,
 				8DF542CA2599A8D40052C902 /* NewsItems.swift in Sources */,

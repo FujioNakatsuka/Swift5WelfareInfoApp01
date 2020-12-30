@@ -15,36 +15,20 @@ class InfoDeckViewController: SegementSlideDefaultViewController {
         super.viewDidLoad()
 
         reloadData()
-//        scrollToSlide(at: 0, animated: true)
+
     }
+ 
     
-//    override var headerView: UIView?{
-//
-//        let headerView = UIImageView()
-//        headerView.isUserInteractionEnabled = true
-//        headerView.contentMode = .scaleToFill
-//        headerView.image = UIImage(named: "header")
-//        headerView.translatesAutoresizingMaskIntoConstraints = false
-//        let headerHeight:CGFloat
-//        if #available(iOS 11.0, *){
-//            headerHeight = view.bounds.height/4 +  view.safeAreaInsets.top
-//        }else{
-//            headerHeight = view.bounds.height/4 + topLayoutGuide.length
-//        }
-//
-//        headerView.heightAnchor.constraint(equalToConstant: headerHeight).isActive = true
+    
     override func segementSlideHeaderView() -> UIView? {
             let headerView = UIView()
-            let headerView.translatesAutoresizingMaskIntoConstraints = false
-            headerView.heightAnchor.constraint(equalToConstant: view.bounds.height/4).isActive = true
+            headerView.translatesAutoresizingMaskIntoConstraints = false
+        
+        headerView.heightAnchor.constraint(equalToConstant: view.bounds.height/4).isActive = true
             return headerView
-        }
-    return headerView
-        
-        
         
     }
-    
+
     
     override var titlesInSwitcher: [String] {
         
@@ -58,11 +42,12 @@ class InfoDeckViewController: SegementSlideDefaultViewController {
         switch index{
             
         case 0:
-            return Page1TableViewController()
-
-        default:return Page1TableViewController()
+            return Page1ViewController()
             
+        default:
+            return Page1ViewController()
         }
+        
 
 }
 }
