@@ -10,12 +10,15 @@ import SegementSlide
 
 
 class InfoDeckViewController: SegementSlideDefaultViewController {
+    
+    var nameArray = [String]()
+    var urlArray = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         reloadData()
-
+        defaultSelectedIndex = 0
     }
  
     
@@ -32,22 +35,24 @@ class InfoDeckViewController: SegementSlideDefaultViewController {
     
     override var titlesInSwitcher: [String] {
         
-        return ["TOP","AbemaNews","Yahoo!!","IT","Buzz","CNN"]
+        return ["Yahoo!","厚生労働省","東京都","訪問看護と介護","小金井市","福祉医療機構"]
+        return nameArray
         
     }
     
     
     override func segementSlideContentViewController(at index: Int) -> SegementSlideContentScrollViewDelegate? {
         
-        switch index{
+        switch index {
+        case nameArray.count - 1:
             
-        case 0:
+            let viewController: Page1ViewController = Page1ViewController()
+            viewController.index = index
+        
             return Page1ViewController()
             
         default:
             return Page1ViewController()
         }
-        
-
-}
+    }
 }

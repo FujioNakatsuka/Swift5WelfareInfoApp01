@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1FFB1BB92CAA2233C5CFF6C1 /* Pods_Swift5WelfareInfoApp01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B02E67262145ABC8F4B5BBA0 /* Pods_Swift5WelfareInfoApp01.framework */; };
+		8D082FD525C841A20054B01A /* start.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8D082FD425C841A20054B01A /* start.mov */; };
 		8DF54279259996B10052C902 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF54278259996B10052C902 /* AppDelegate.swift */; };
 		8DF5427B259996B10052C902 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF5427A259996B10052C902 /* SceneDelegate.swift */; };
 		8DF54280259996B10052C902 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DF5427E259996B10052C902 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		41B9A806687040F580ACE2E0 /* Pods-Swift5WelfareInfoApp01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift5WelfareInfoApp01.debug.xcconfig"; path = "Target Support Files/Pods-Swift5WelfareInfoApp01/Pods-Swift5WelfareInfoApp01.debug.xcconfig"; sourceTree = "<group>"; };
 		5A0A80D7E5A32A266634A8CD /* Pods_Swift5WelfareInfoApp01Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift5WelfareInfoApp01Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C772162896FAEF82F0D557 /* Pods-Swift5WelfareInfoApp01Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift5WelfareInfoApp01Tests.release.xcconfig"; path = "Target Support Files/Pods-Swift5WelfareInfoApp01Tests/Pods-Swift5WelfareInfoApp01Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8D082FD425C841A20054B01A /* start.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = start.mov; sourceTree = "<group>"; };
 		8DF54275259996B10052C902 /* Swift5WelfareInfoApp01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift5WelfareInfoApp01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DF54278259996B10052C902 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DF5427A259996B10052C902 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				8DF542B52599999E0052C902 /* View */,
 				8DF542B42599998D0052C902 /* Controller */,
 				8DF54286259996B30052C902 /* Info.plist */,
+				8D082FD425C841A20054B01A /* start.mov */,
 			);
 			path = Swift5WelfareInfoApp01;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				8DF54285259996B30052C902 /* LaunchScreen.storyboard in Resources */,
 				8DF54282259996B30052C902 /* Assets.xcassets in Resources */,
 				8DF54280259996B10052C902 /* Main.storyboard in Resources */,
+				8D082FD525C841A20054B01A /* start.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

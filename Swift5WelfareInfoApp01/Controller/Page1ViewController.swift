@@ -18,6 +18,10 @@ class Page1ViewController: UITableViewController,SegementSlideContentScrollViewD
     
     var newsItems = [NewsItems]()
 
+    var index = Int()
+    
+    var urlArray = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,15 +35,20 @@ class Page1ViewController: UITableViewController,SegementSlideContentScrollViewD
             imageView.image = image
         self.tableView.backgroundView = imageView
         
+        if UserDefaults.standard.object(forKey: "urlArray") != nil{
+            
+            urlArray = UserDefaults.standard.object(forKey: "urlArray") as! [String]
+            
+        }
+        
+        
+        
+        
+        
         //XMLパース
         //XMLパース(主要ニュース)
-        let urlString = "https://news.yahoo.co.jp/rss/topics/top-picks.xml"
-        //媒体別
-        ////https://news.yahoo.co.jp/rss/media/wordleaf/all.xml
-//
-//
-//
-//        let urlString = "https://news.yahoo.co.jp/pickup/rss.xml"
+        let urlString = urlArray[index]
+ 
         let url:URL = URL(string:urlString)!
         parser = XMLParser(contentsOf: url)!
         parser.delegate = self
