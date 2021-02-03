@@ -35,7 +35,8 @@ class InfoDeckViewController: SegementSlideDefaultViewController {
     
     override var titlesInSwitcher: [String] {
         
-        return ["Yahoo!","厚生労働省","東京都","訪問看護と介護","小金井市","福祉医療機構"]
+//        return ["Yahoo!","厚生労働省","東京都","訪問看護と介護","小金井市","福祉医療機構"]
+        return ["厚生労働省","東京都","訪問看護と介護","小金井市","福祉医療機構"]
         return nameArray
         
     }
