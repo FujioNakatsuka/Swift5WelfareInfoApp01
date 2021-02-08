@@ -16,7 +16,7 @@ class PickerViewController: UIViewController,UIPickerViewDelegate
     
     @IBOutlet weak var pickerView: UIPickerView!
 //    let dataNameList = ["Yahoo!","厚生労働省","東京都","訪問看護と介護","小金井市","福祉医療機構"]
-//    let dataURLList = ["https://news.yahoo.co.jp/rss","https://www.mhlw.go.jp/stf/news.rdf","https://www.metro.tokyo.lg.jp/rss/index.rdf","https://www.ndl.go.jp/jp/data/sakuin/rss/000000097643.xml","https://www.city.koganei.lg.jp/rss_news.xml","https://www.wam.go.jp/gyoseiShiryou/new_rss"]
+//    let dataURLList = ["https://www.mhlw.go.jp/stf/news.rdf","https://www.metro.tokyo.lg.jp/rss/index.rdf","https://www.ndl.go.jp/jp/data/sakuin/rss/000000097643.xml","https://www.city.koganei.lg.jp/rss_news.xml","https://www.wam.go.jp/gyoseiShiryou/new_rss"]
     
     let dataNameList = ["厚生労働省","東京都","訪問看護と介護","小金井市","福祉医療機構"]
     let dataURLList = ["https://www.mhlw.go.jp/stf/news.rdf","https://www.metro.tokyo.lg.jp/rss/index.rdf","https://www.ndl.go.jp/jp/data/sakuin/rss/000000097643.xml","https://www.city.koganei.lg.jp/rss_news.xml","https://www.wam.go.jp/gyoseiShiryou/new_rss"]
@@ -32,24 +32,24 @@ class PickerViewController: UIViewController,UIPickerViewDelegate
         pickerView.delegate = self
         pickerView.dataSource = self
         
-        let path = Bundle.main.path(forResource: "start", ofType: "mov")
-        player = AVPlayer(url: URL(fileURLWithPath: path!))
-        
-        let playerLayer = AVPlayerLayer(player:player)
-        playerLayer.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height)
-        
-        playerLayer.videoGravity = .resizeAspectFill
-        playerLayer.repeatCount = 0
-        playerLayer.zPosition = -1
-        view.layer.insertSublayer(playerLayer, at: 0)
-        NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: player.currentItem, queue: .main){(_) in
-            
-            self.player.seek(to: .zero)
-           
-            self.player.play()
-            
-            
-        }
+//        let path = Bundle.main.path(forResource: "start", ofType: "mov")
+//        player = AVPlayer(url: URL(fileURLWithPath: path!))
+//        
+//        let playerLayer = AVPlayerLayer(player:player)
+//        playerLayer.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height)
+//        
+//        playerLayer.videoGravity = .resizeAspectFill
+//        playerLayer.repeatCount = 0
+//        playerLayer.zPosition = -1
+//        view.layer.insertSublayer(playerLayer, at: 0)
+//        NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: player.currentItem, queue: .main){(_) in
+//            
+//            self.player.seek(to: .zero)
+//           
+//            self.player.play()
+//            
+//            
+//        }
         
     }
     
@@ -73,10 +73,30 @@ class PickerViewController: UIViewController,UIPickerViewDelegate
     }
     
     @IBAction func selected(_ sender: Any) {
+//        nameArray.append(nameString)
+//        urlArray.append(urlString)
+//
+//        UserDefaults.standard.setValue(urlArray, forKey: "urlArray")
+        if UserDefaults.standard.object(forKey: "nameArray") != nil{
+            
+            nameArray = UserDefaults.standard.object(forKey: "nameArray") as! [String]
+            
+        }
+        if UserDefaults.standard.object(forKey: "urlArray") != nil{
+            
+            urlArray = UserDefaults.standard.object(forKey: "urlArray") as! [String]
+            
+        }
         nameArray.append(nameString)
         urlArray.append(urlString)
-  
+        
         UserDefaults.standard.setValue(urlArray, forKey: "urlArray")
+        UserDefaults.standard.setValue(nameArray, forKey: "nameArray")
+
+//        print(urlArray.debugDescription)
+
+        //⭐️Value of type 'Any' has no member 'isEnabled'
+        sender.isEnabled = true
         
     }
 
@@ -86,10 +106,10 @@ class PickerViewController: UIViewController,UIPickerViewDelegate
         //値を渡しながら画面遷移
         let nextVC = self.storyboard?.instantiateViewController(identifier: "nextVC") as! InfoDeckViewController
         
-        nextVC.nameArray = nameArray
-        nextVC.urlArray = urlArray
-        
-        UserDefaults.standard.setValue(urlArray, forKey: "urlArray")
+//        nextVC.nameArray = nameArray
+//        nextVC.urlArray = urlArray
+//        
+//        UserDefaults.standard.setValue(urlArray, forKey: "urlArray")
         
         
         self.navigationController?.pushViewController(nextVC, animated: true)

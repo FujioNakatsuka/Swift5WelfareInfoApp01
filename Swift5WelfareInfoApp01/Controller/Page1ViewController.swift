@@ -29,11 +29,11 @@ class Page1ViewController: UITableViewController,SegementSlideContentScrollViewD
         tableView.backgroundColor = .clear
         
         //画像をTableViewの下に置く
-        let image = UIImage(named: "0")
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.size.width, height:self.tableView.frame.size.height))
-    
-            imageView.image = image
-        self.tableView.backgroundView = imageView
+//        let image = UIImage(named: "0")
+//        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.size.width, height:self.tableView.frame.size.height))
+//
+//            imageView.image = image
+//        self.tableView.backgroundView = imageView
         
         if UserDefaults.standard.object(forKey: "urlArray") != nil{
             
@@ -42,18 +42,17 @@ class Page1ViewController: UITableViewController,SegementSlideContentScrollViewD
         }
         
         
-        
-        
-        
         //XMLパース
         //XMLパース(主要ニュース)
-        let urlString = urlArray[index]
+        for i in 0...urlArray.count - 1{
+        
+        let urlString = urlArray[i]
  
         let url:URL = URL(string:urlString)!
         parser = XMLParser(contentsOf: url)!
         parser.delegate = self
         parser.parse()
-        
+        }
     }
     @objc var scrollView: UIScrollView{
         
